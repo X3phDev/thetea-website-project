@@ -1,0 +1,131 @@
+/* I took this straight from the lab */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* I used rem because it came from the lab plus it makes scaling nicer */ 
+
+header {
+    background: #5c4632;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+/* This is where I built that effect for nav links */
+
+.nav-links a:hover { 
+	color: white;
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid transparent;
+	border-bottom: none;
+	transition: 0.3s;
+}
+
+.nav-links a:hover {
+	background-color: #a6895b;
+	border-radius: 4px 4px 0 0;
+}
+
+.nav-links a.active {
+	background-color: #a6895b;
+	color: #333;
+	border: 1px solid white;
+	border-bottom: 2px solid #333;
+	border-radius: 4px 4px 0 0;
+}
+
+/* This is how I am keeping the links white */
+
+.nav-links a:visited { 	
+	color: white;
+}
+
+/* This is where I resized my logo I made on Canva */
+
+.logo img {
+	height: 100px;
+	width: auto;
+}
+
+/* This is ther default hero section I used for the homepage, about, and contact */
+
+.hero {
+	margin:0 auto;
+	padding: 2rem 1rem;
+	text-align: center;
+	max-width: 800px;
+	font-size: 1.5rem;
+}
+
+/* Centering the check the tea section */ 
+
+.index {
+
+	margin:2rem auto;
+	text-align: center;
+	max-width: 800px;
+	font-size: 2rem;
+}
+
+/* This is the Cold Tea stuff */
+
+.colddog-meta {
+	margin:0 auto;
+	padding: 2rem 1rem;
+	text-align: center;
+	max-width: 800px;
+}
+
+.colddog-meta img {
+	display:block;
+	margin: 2rem auto;
+	height: auto;
+	max-width: 65%;
+}
+
+/* Hot tea has pretty much the same content so same code gets reused */
+
+.hotdog-meta {
+	margin:0 auto;
+	padding: 2rem 1rem;
+	text-align: center;
+	max-width: 800px;
+}
+
+.hotdog-meta img {
+	display:block;
+	margin: 3rem auto;
+	height: auto;
+	max-width: 75%;
+}
+	
+/* General site wide stuff like the font and color as well as footer */
+	
+body {
+	font-family: "Segoe Print";
+	background: #e0d6c2;
+	color: #333;
+}
+
+footer {
+	
+	background:#5c4632;
+	color: white;
+}
